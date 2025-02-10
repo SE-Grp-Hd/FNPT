@@ -1,0 +1,222 @@
+@media screen and (max-width:768px) {
+    .header {
+        height: 90px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        position: fixed;
+        right: -320px;
+        /* 右から出てくる */
+        top: 0;
+        width: 150px;
+        height: 100vh;
+        padding-top: 60px;
+        background-color: #0093DD;
+        transition: all .6s;
+        z-index: 200;
+        overflow-y: auto;
+        /* メニューが多くなったらスクロールできるように */
+    }
+
+    .hamburger {
+        position: absolute;
+        right: 40px;
+        top: 24px;
+        width: 40px;
+        /* クリックしやすい幅 */
+        height: 40px;
+        /* クリックしやすい高さ */
+        cursor: pointer;
+        z-index: 300;
+        background-color: aqua;
+        color: black;
+    }
+
+    .nav_list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .nav_item {
+        text-align: center;
+        padding: 0 14px;
+    }
+
+    .nav_item a {
+        display: block;
+        padding: 8px 0;
+        border-bottom: 2px solid white;
+        text-decoration: none;
+        color: black;
+    }
+
+    .hamburger_border {
+        position: absolute;
+        left: 11px;
+        width: 20px;
+        height: 4px;
+        background-color: black;
+        transition: all .6s;
+    }
+
+    .hamburger_border_top {
+        top: 20px;
+    }
+
+    .hamburger_border_center {
+        top: 28px;
+    }
+
+    .hamburger_border_bottom {
+        top: 36px;
+    }
+
+    .hamburger_border_top {
+        top: 14px;
+    }
+
+    .hamburger_border_center {
+        top: 20px;
+    }
+
+    .hamburger_border_bottom {
+        top: 26px;
+    }
+
+    .black_bg {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 100;
+        background-color: aqua;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .6s;
+        cursor: pointer;
+    }
+
+    /* 表示された時用のCSS */
+    .nav-open .nav {
+        right: 0;
+    }
+
+    .nav-open .black_bg {
+        opacity: .8;
+        visibility: visible;
+    }
+
+    .nav-open .hamburger_border_top {
+        transform: rotate(45deg);
+        top: 20px;
+    }
+
+    .nav-open .hamburger_border_center {
+        width: 0;
+        left: 50%;
+    }
+
+    .nav-open .hamburger_border_bottom {
+        transform: rotate(-45deg);
+        top: 20px;
+    }
+}
+
+/* 通常表示時（PCやタブレットなど）では改行を非表示にする */
+.mobile-break {
+    display: none;
+}
+
+/* スマホ表示時（画面幅が768px以下の場合）に改行を表示 */
+@media screen and (max-width: 768px) {
+    .mobile-break {
+        display: inline;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .header_inner {
+        max-width: 980px;
+        padding: 15px 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav_list li {
+        display: inline-block;
+        text-align: right;
+        padding-left: 20px;
+    }
+
+    .nav_list li a {
+        color: black;
+        font-weight: 600;
+    }
+}
+
+/* モバイル向けのスタイル (425px以下) */
+@media screen and (max-width: 425px) {
+
+    /* フッター内のコンテナ */
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* footer-leftはそのまま */
+    .footer-left {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    /* footer-rightをfooter-leftの下に配置 */
+    .footer-right {
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    /* ナビゲーションを中央に配置 */
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .footer-links ul {
+        display: block;
+        padding: 0;
+    }
+
+    .footer-links li {
+        margin: 10px 0;
+    }
+
+    /* ソーシャルメディアアイコン */
+    .footer-social {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-social .social-icon {
+        margin: 0 10px;
+    }
+
+    /* コピーライトとX */
+    .footer-copyright {
+        text-align: center;
+    }
+
+    /* Xのサイズ */
+    .x-logo {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,226 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+    color: #333;
+    font-weight: bold;
+    margin-top: 100px;
+    /* ヘッダーの高さ分のスペースを確保 */
+}
+
+/* ヘッダー */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    border-bottom: 4px solid #0093DD;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+header .logo img {
+    width: 120px;
+    /* ロゴの幅を小さく設定 */
+    height: auto;
+    /* 高さは自動調整 */
+}
+
+header .header-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: #111;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #0093DD;
+}
+
+.header {
+    background-color: white;
+    padding: 10px;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header h1 {
+    margin: 0;
+    font-weight: 700;
+    color: #ff6600;
+}
+
+.header-content a {
+    text-decoration-line: none;
+    color: #0093DD;
+}
+
+/* ナビゲーション全体 */
+.navigation {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* メニュー項目 */
+.navigation ul {
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+    position: relative;
+    background-color: black;
+}
+
+/* メインメニューリンク */
+.navigation ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    color: #0093DD;
+}
+
+.header {
+    left: 0;
+    top: 0;
+}
+
+.header_inner {
+    position: relative;
+    padding: 15px;
+}
+
+/* フッターセクション */
+.footer {
+    background-color: #fff;
+    color: #111;
+    padding: 30px 20px;
+    text-align: left;
+    border-top: 4px solid #0093DD;
+}
+
+/* レスポンシブ対応: タブレット(768px)以上はデフォルト */
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* フッターの左側の部分 */
+.footer-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* フッターの右側の部分 */
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* ナビゲーション */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.footer-links li {
+    margin: 0;
+}
+
+.footer-links a {
+    color: #111;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-links a:hover {
+    color: #0093DD;
+}
+
+/* ソーシャルメディアアイコン */
+.footer-social {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.footer-social .social-icon {
+    margin: 0 10px;
+}
+
+.footer-social .social-icon img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.footer-social .social-icon:hover img {
+    transform: scale(1.2);
+}
+
+/* コピーライト */
+.footer-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1rem;
+    color: #bbb;
+}
+
+.x-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
